@@ -20,15 +20,10 @@ Copyright 2018 - The LineageOS Project.
 
 ![OnePlus 6T](https://cdn2.gsmarena.com/vv/pics/oneplus/oneplus-6t-thunder-purple-1.jpg "OnePlus 6T")
 
-## Temporary build instructions
+## Build instructions
 
 ```
 # Compiling
-$ m[ake|ka] bootimage systemimage
-
-# Installing
-$ fastboot --disable-verity --disable-verification flash vbmeta stock_vbmeta.img
-$ fastboot flash boot boot.img
-$ fastboot flash system system.img
-$ fastboot -w reboot
+lunch corvus_fajita-userdebug (this will auto pull all dependencies)
+m[ake|ka] corvus -jx (where x is the number of jobs to run on parallel threads)
 ```
