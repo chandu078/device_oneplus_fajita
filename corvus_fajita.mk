@@ -36,6 +36,10 @@ EXTRA_FOD_ANIMATIONS := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
 
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.corvus.maintainer=Chandu
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := corvus_fajita
 PRODUCT_DEVICE := fajita
