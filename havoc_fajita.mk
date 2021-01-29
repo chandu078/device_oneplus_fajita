@@ -40,6 +40,9 @@ WITH_GAPPS := true
 # FOD Animation
 EXTRA_FOD_ANIMATIONS := true
 
+# Live Wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := havoc_fajita
 PRODUCT_DEVICE := fajita
