@@ -24,6 +24,6 @@ Copyright 2018 - The LineageOS Project.
 
 ```
 # Compiling
-lunch evolution_fajita-userdebug (this will auto pull all dependencies)
-m[ake|ka] bacon -jx (where x is the number of jobs to run on parallel threads)
+. build/envsetup.sh
+brunch
 ```

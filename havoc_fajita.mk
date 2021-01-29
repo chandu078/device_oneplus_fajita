@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Official
-EVO_BUILD_TYPE := OFFICIAL
+HAVOC_BUILD_TYPE := Official
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -41,7 +41,7 @@ WITH_GAPPS := true
 EXTRA_FOD_ANIMATIONS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_fajita
+PRODUCT_NAME := havoc_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
