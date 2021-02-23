@@ -16,9 +16,11 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita",
-    init_rc: ["lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita.rc"],
+    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita",
+    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita.rc"],
+    vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita.xml"],
     srcs: ["service.cpp", "FingerprintInscreen.cpp"],
+    vendor: true,
     shared_libs: [
         "libbase",
         "libhardware",
