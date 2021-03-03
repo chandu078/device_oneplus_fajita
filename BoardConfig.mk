@@ -25,5 +25,8 @@ TARGET_OTA_ASSERT_DEVICE := OnePlus6T
 # FOD
 TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.oneplus_fajita
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # inherit from the proprietary version
 -include vendor/oneplus/fajita/BoardConfigVendor.mk
